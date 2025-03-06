@@ -11,5 +11,21 @@
    <!--uc-2-->
   <h1>{{ title }}</h1>
 
+    <!-- UC-3: Click event to open website and uc-4 -->
+<div>
+  <img [src]="imgurl" alt="BridgeLabz Logo" (click)="onClick($event)" style="cursor: pointer;" />
+</div>
+
+<!--uc-5-->
+<div>
+  <label>Enter your name: </label>
+  <input type="text" [(ngModel)]="userName" placeholder="Type your name">
+</div>
+
+<h2>Hello from BridgeLabz, {{ userName }}</h2>
+// uc-5 
+userName: string = '';
+
+
 </body>
 </html>

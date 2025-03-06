@@ -25,4 +25,7 @@ export class AppComponent {
      console.log("Image clicked", $event);
      window.open(this.url, "_blank"); // Opens the link in a new tab
    }
+   // uc-5 
+   userName: string = '';
+
   } 
